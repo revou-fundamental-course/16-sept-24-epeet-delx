@@ -5,11 +5,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+    </style>
 </head>
 
 <body>
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="logo-icon"></div>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#section-home" id="section-home">Home</a>
+            <a href="#section-our-profile">Our Profile</a>
+            <a href="#section-portofolio">Portofolio</a>
+            <a href="#section-message-us" id="section-message-us">Message Us</a>
+        </nav>
+    </header>
+
+    <hr/>
+
+    <main>
+        <!-- Home -->  
+        <section id="section-home">
+            <header>
+                <h1 class="inline">Hi <h1 class="inline" id="user-name">User</h1>, Weclome to My Website</h1>
+            </header>
+
+            <article>
+                <p>Di balik karya yang indah, terdapat tangan yang lelah</p>
+
+                <!-- Photo Banner -->
+                <div class="photo-banner photo-1"></div>
+                <div class="photo-banner photo-2"></div>
+                <div class="photo-banner photo-3"></div>
+            </article>
+        </section>
+
+        <hr/>
+
+        <!-- Our Profile -->
+        <section id="section-our-profile">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+
+            <div class="profile-icon-container">
+                <div>
+                    <div class="profile-icon"></div>
+                    <h4>Profile 1</h4>
+                </div>
     
+                <div>
+                    <div class="profile-icon"></div>
+                    <h4>Profile 2</h4>
+                </div>
+
+                <div>
+                    <div class="profile-icon"></div>
+                    <h4>Profile 3</h4>
+                </div>
+            </div>
+            
+        </section>
+
+        <hr/>
+
+        <!-- Portofolio -->
+        <section id="section-portofolio">
+            <header>
+                <h1>Portofolio</h1>
+            </header>
+        </section>
+
+        <hr/>
+
+        <!-- Message Us -->
+        <section id="section-message-us">
+            <header>
+                <h1>Message Us</h1>
+
+                    <section class="form-container">
+                        <!-- Form section -->
+                        <form id="myForm">
+                            <table>
+                              <tr>
+                                <td><label for="name">Nama:</label></td>
+                                <td><input type="text" id="name" name="name" required></td>
+                                <td><div class="error" id="nameError"></div></td>
+                              </tr>
+                              <tr>
+                                <td><label for="dob">Tanggal Lahir:</label></td>
+                                <td><input type="date" id="dob" name="dob" required></td>
+                                <td><div class="error" id="dobError"></div></td>
+                              </tr>
+                              <tr>
+                                <td><label for="gender">Jenis Kelamin:</label></td>
+                                <td>
+                                  <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                                  <label for="male">Laki-Laki</label>
+                                  <input type="radio" id="female" name="gender" value="Perempuan">
+                                  <label for="female">Perempuan</label>
+                                </td>
+                                <td><div class="error" id="genderError"></div></td>
+                              </tr>
+                              <tr>
+                                <td><label for="message">Pesan:</label></td>
+                                <td><textarea id="message" name="message" required></textarea></td>
+                                <td><div class="error" id="messageError"></div></td>
+                              </tr>
+                              <tr>
+                                <td colspan="2"><input type="submit" value="Submit"></td>
+                              </tr>
+                            </table>
+                          </form>
+                    <!-- Result Form-->
+                    <div class="output-container" id="output">
+                        <p><strong>Current time :</strong> <span id="currentTime"></span></p>
+                        <p><strong>Nama :</strong> <span id="outputName"></span></p>
+                        <p><strong>Tanggal Lahir :</strong> <span id="outputDob"></span></p>
+                        <p><strong>Jenis Kelamin :</strong> <span id="outputGender"></span></p>
+                        <p><strong>Pesan :</strong> <span id="outputMessage"></span></p>
+                    </div>
+                </div>
+                <div id="result"></div>
+                </section>
+            </header>
+        </section>
+        <script src="js/script.js"></script>
+    </main>
+
+    <footer>
+        <p class="text1">Made By Epeet@2024</p>
+    </footer>
 </body>
 
 </html>
