@@ -1,4 +1,12 @@
 // ini js
+replaceName();
+
+function replaceName() {
+    let name = prompt('Silahkan masukan nama anda');
+    console.log(name);
+    document.getElementById('user-name').innerHTML = name;
+}
+
 const form = document.getElementById('myForm');
 const resultDiv = document.getElementById('result');
 

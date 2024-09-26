@@ -1,144 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-    </style>
+    <link rel="stylesheet" href="css\style.css">
 </head>
-
 <body>
     <header class="main-header">
-        <!-- Logo -->
+        <!--logo-->
         <div class="logo-icon"></div>
 
-        <!-- Navigation -->
+        <!--navigation-->
         <nav>
-            <a href="#section-home" id="section-home">Home</a>
-            <a href="#section-our-profile">Our Profile</a>
+            <a href="#section-home" class="section-home">Home</a>
+            <a href="#section-our-profile">My Profile</a>
             <a href="#section-portofolio">Portofolio</a>
-            <a href="#section-message-us" id="section-message-us">Message Us</a>
+            <a href="#section-message-us" class="section-message-us">Message Us</a>
         </nav>
     </header>
 
-    <hr/>
+
 
     <main>
-        <!-- Home -->  
+        <!--Home-->
         <section id="section-home">
-            <header>
-                <h1 class="inline">Hi <h1 class="inline" id="user-name">User</h1>, Weclome to My Website</h1>
+            <header class="well">
+                <h1 class="inline">Hi <h1 class="inline" id="user-name">User </h1><h1 class="inline"> Welcome to My Website</h1>
             </header>
 
             <article>
-                <p>Di balik karya yang indah, terdapat tangan yang lelah</p>
+                <p >Di balik karya yang indah, Terdapat tangan yang lelah</p>
 
-                <!-- Photo Banner -->
+                <!--photo banner-->
                 <div class="photo-banner photo-1"></div>
                 <div class="photo-banner photo-2"></div>
                 <div class="photo-banner photo-3"></div>
             </article>
         </section>
 
-        <hr/>
+        <hr>
 
-        <!-- Our Profile -->
+        <!--My Profile-->
         <section id="section-our-profile">
-            <header>
-                <h1>Our Profile</h1>
-            </header>
+            <header class="mep">
+                <h1 class="my">My Profile</h1>
 
             <div class="profile-icon-container">
                 <div>
-                    <div class="profile-icon"></div>
-                    <h4>Profile 1</h4>
-                </div>
-    
-                <div>
-                    <div class="profile-icon"></div>
-                    <h4>Profile 2</h4>
+                    <img class="profil-1" class="inline">
+                        <article-profile>
+                            <h3>Pembuat Mini Project ini
+                                 <br>Bernama Muhammad Fadhil As-Syamil
+                                 <br>Lahir di Sukabumi pada 22 Mei 2006
+                                 <br> Ya, Pembuat Mini Project ini tergolong masih muda
+                            </h3>
+                        </article-profile>
+                    </img>
                 </div>
 
                 <div>
-                    <div class="profile-icon"></div>
-                    <h4>Profile 3</h4>
+                    <img class="profil-2" class="inline">
+                        <h3>Muhammad Fadhil As-Syamil atau lebih di kenal Fadhil 
+                            <br> Masih Menempuh pembelajaran nya Di MA AL-Hikmah 2 Cirebon
+                            <br> dan berniat melanjutkan Pengguruan Tinggi
+                            <br> Universitas Brawijaya dengan Prodi Teknik Informatika
+                        </h3>
+                    </img>
                 </div>
+
+                <div>
+                    <img class="profil-3" class="inline">
+                        <h3>Fadhil tersendiri memiliki Hobi yang tergolong No Live ya
+                            <br>Hobi yang paling di gemari adalah Bermain Game
+                            <br>Adapun Fotografi dan juga Touring
+                            <br>Software Engineering adalah impian nya untuk di masa kerja 
+                        </h3>
+                    </img>
+                </div>
+            </header>
             </div>
-            
+
         </section>
 
-        <hr/>
+        <hr>
 
-        <!-- Portofolio -->
+        <!--Portofolio-->
         <section id="section-portofolio">
-            <header>
+            <header class="pt">
                 <h1>Portofolio</h1>
+            </header>
+                <header-portofolio>
+                    <div class="header-container">
+                        <h1>Muhammad Fadhil As-Syamil</h1>
+                        <p>Siswa MA Al-Hikmah 2 Cirebon - Kelas XII</p>
+                    </div>
+                </header-portofolio>
+            
+                <section class="about-section">
+                    <h2>Tentang Saya</h2>
+                    <p>Halo, saya Muhammad Fadhil As-Syamil, seorang siswa SMA yang tertarik dalam dunia teknologi, khususnya pemrograman dan desain grafis. Saya gemar belajar hal-hal baru dan selalu bersemangat dalam mengejar pengetahuan di bidang IT.</p>
+                </section>
+            
+                <section class="education-section">
+                    <h2>Pendidikan</h2>
+                    <ul>
+                        <li>MA Al-Hikmah 2 Cirebon - Kelas XII (2022 - Sekarang)</li>
+                        <li>SMPS IKADI Purwakarta (2019 - 2022)</li>
+                        <li>SDIT Al-Husna Parungkuda (2014 - 2019)</li>
+                    </ul>
+                </section>
+            
+                <section class="skills-section">
+                    <h2>Keterampilan</h2>
+                    <ul>
+                        <li>Fotografi, Videografi</li>
+                        <li>Desain Grafis dengan Photoshop dan Canva</li>
+                        <li>Public Speaking dan Presentasi</li>
+                        <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+                    </ul>
+                </section>
+            
             </header>
         </section>
 
-        <hr/>
+        <hr>
 
-        <!-- Message Us -->
+        <!--Message Us-->
         <section id="section-message-us">
             <header>
                 <h1>Message Us</h1>
-
-                    <section class="form-container">
-                        <!-- Form section -->
-                        <form id="myForm">
-                            <table>
-                              <tr>
-                                <td><label for="name">Nama:</label></td>
-                                <td><input type="text" id="name" name="name" required></td>
-                                <td><div class="error" id="nameError"></div></td>
-                              </tr>
-                              <tr>
-                                <td><label for="dob">Tanggal Lahir:</label></td>
-                                <td><input type="date" id="dob" name="dob" required></td>
-                                <td><div class="error" id="dobError"></div></td>
-                              </tr>
-                              <tr>
-                                <td><label for="gender">Jenis Kelamin:</label></td>
-                                <td>
-                                  <input type="radio" id="male" name="gender" value="Laki-Laki" required>
-                                  <label for="male">Laki-Laki</label>
-                                  <input type="radio" id="female" name="gender" value="Perempuan">
-                                  <label for="female">Perempuan</label>
-                                </td>
-                                <td><div class="error" id="genderError"></div></td>
-                              </tr>
-                              <tr>
-                                <td><label for="message">Pesan:</label></td>
-                                <td><textarea id="message" name="message" required></textarea></td>
-                                <td><div class="error" id="messageError"></div></td>
-                              </tr>
-                              <tr>
-                                <td colspan="2"><input type="submit" value="Submit"></td>
-                              </tr>
-                            </table>
-                          </form>
-                    <!-- Result Form-->
-                    <div class="output-container" id="output">
-                        <p><strong>Current time :</strong> <span id="currentTime"></span></p>
-                        <p><strong>Nama :</strong> <span id="outputName"></span></p>
-                        <p><strong>Tanggal Lahir :</strong> <span id="outputDob"></span></p>
-                        <p><strong>Jenis Kelamin :</strong> <span id="outputGender"></span></p>
-                        <p><strong>Pesan :</strong> <span id="outputMessage"></span></p>
-                    </div>
-                </div>
-                <div id="result"></div>
-                </section>
             </header>
+             <section class="form-container">
+                <!--Form section-->
+                <form id="myForm">
+                    <table>
+                      <tr>
+                        <td><label for="name">Nama:</label></td>
+                        <td><input type="text" id="name" name="name" required></td>
+                        <td><div class="error" id="nameError"></div></td>
+                      </tr>
+                      <tr>
+                        <td><label for="dob">Tanggal Lahir:</label></td>
+                        <td><input type="date" id="dob" name="dob" required></td>
+                        <td><div class="error" id="dobError"></div></td>
+                      </tr>
+                      <tr>
+                        <td><label for="gender">Jenis Kelamin:</label></td>
+                        <td>
+                          <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                          <label for="male">Laki-Laki</label>
+                          <input type="radio" id="female" name="gender" value="Perempuan">
+                          <label for="female">Perempuan</label>
+                        </td>
+                        <td><div class="error" id="genderError"></div></td>
+                      </tr>
+                      <tr>
+                        <td><label for="message">Pesan:</label></td>
+                        <td><textarea id="message" name="message" required></textarea></td>
+                        <td><div class="error" id="messageError"></div></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"><input type="submit" value="Submit"></td>
+                      </tr>
+                    </table>
+                </form>
+            </section> 
+            <!--Result Form-->
+            <div class="output-container" id="output">
+                <p><strong>Current time :</strong> <span id="currentTime"></span></p>
+                <p><strong>Nama :</strong> <span id="outputName"></span></p>
+                <p><strong>Tanggal Lahir :</strong> <span id="outputDob"></span></p>
+                <p><strong>Jenis Kelamin :</strong> <span id="outputGender"></span></p>
+                <p><strong>Pesan :</strong> <span id="outputMessage"></span></p>
+            </div>
         </section>
         <script src="js/script.js"></script>
     </main>
 
     <footer>
-        <p class="text1">Made By Epeet@2024</p>
+        <p class="textmade">Made By Fadhil Syamil @2024</p>
     </footer>
 </body>
-
 </html>
