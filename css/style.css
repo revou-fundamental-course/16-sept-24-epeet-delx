@@ -75,18 +75,18 @@ article {
 .photo-banner {
     background-position: center;
     background-size: cover;
-    height: 1000px;
+    height: 500px;
 }
 
 .photo-1 {
     background-image: url(../assets/photo-0.jpg);
 }
 .photo-2 {
-    background-image: url(../assets/profil-1.jpg);
+    background-image: url(../assets/photo-1.jpg);
 }
 
 .photo-3 {
-    background-image: url(../assets/profil-2.JPG);
+    background-image: url(../assets/photo-2.jpg);
 }
 
 /*Profil gue*/
